@@ -16,11 +16,21 @@ function Home() {
   );
 }
 
+// The <About> component should return a <div> with an id of about. The div can also optionally have some additional text content and other elements inside 
+function About() {
+  return (
+    <div id="about">
+      <h1>About me</h1>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div>
       <NavBar />
-      {/* add the <Home> component here */}
+      <Home />
+      <About />
       {/* write an <About> component here */}
     </div>
   );
